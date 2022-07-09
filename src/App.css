@@ -1,0 +1,55 @@
+
+.App {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgb(46, 46, 46);
+}
+
+.info--name {
+  margin-bottom: 0;
+  color: white;
+}
+
+.info--occupation {
+  margin: 0;
+  color: rgb(117, 154, 168)
+}
+
+.info--website {
+  margin-top: 8px;
+  color: white;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.buttons > a > button {
+  border-radius: 4px;
+  border: 0;
+  padding: 8px 16px;
+  font-weight: 600;
+}
+
+.info--linkedin-button {
+
+  background-color: rgb(50, 93, 150);
+  color: white;
+}
+
+.buttons > a > button:hover {
+  cursor: pointer;
+}
