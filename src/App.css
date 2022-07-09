@@ -1,18 +1,28 @@
-
 .App {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 50px 25%;
+}
+
+.info,
+.about,
+.interests,
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(46, 46, 46);
 }
 
 .info {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: rgb(46, 46, 46);
+}
+
+.info--headshot {
+  width: 100%;
 }
 
 .info--name {
@@ -22,7 +32,7 @@
 
 .info--occupation {
   margin: 0;
-  color: rgb(117, 154, 168)
+  color: rgb(117, 154, 168);
 }
 
 .info--website {
@@ -45,11 +55,49 @@
 }
 
 .info--linkedin-button {
-
   background-color: rgb(50, 93, 150);
   color: white;
 }
 
 .buttons > a > button:hover {
   cursor: pointer;
+}
+
+.about,
+.interests {
+  padding: 0 10%;
+  text-align: left;
+  color: white;
+}
+
+.about--title,
+.interests--title {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.about--content,
+.interests--content {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.interests--content {
+  margin-bottom: 3rem;
+}
+
+.footer {
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2% 20%;
+  color: white;
+  background-color: rgb(94, 79, 61);
+}
+
+.footer > a {
+  color: white;
+}
+
+.footer > a:hover {
+  color: rgb(50, 93, 150);
 }
